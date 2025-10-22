@@ -1,0 +1,52 @@
+# Git and version control
+.git
+.gitignore
+.gitattributes
+
+# Documentation and planning (not needed in container)
+admin/
+docs/
+*.md
+README.md
+STATUS.md
+
+# IDE and editor files
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Local development files
+local/
+dev/
+test-data/
+
+# Scripts (not needed in container)
+setup-admin.sh
+*.sh
+
+# Project planning files
+OurFileServer.txt
+hub-and-spoke-documentation-best-practices.md

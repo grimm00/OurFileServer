@@ -1,0 +1,21 @@
+Looking to make a file server for my home.
+
+I'm looking to see what's the best way to have a central hub for sharing files and
+even information between just me and my partner across the home. This would double
+as an exercise for me to understand how networking works, but we would really
+like to be able to make this work. 
+
+If you look at our ~/projects/pokedex, this is my pokehub project. It is currently on the 
+development branch so you should be able to see the most current project state.
+There is a ProjectStructre.md in the admin folder, but it has expanded since then. That said, 
+of course this may be a simpler project but you can kind of see what kind
+of structure I'm looking for.
+
+As far as workflow, There is a hub-and-spoke file I added to kind of
+show the best practices that we want in a while. Please fill out main.mdc
+to bind these rules to this project's ongoing devlopment.
+
+Also, there should be a "research" folder in admin. In this folder, we 
+should look into the best options for this project, and ideally, this
+will have the potential to be scaled up from a home solution to one
+that can be accessed from anywhere. 
