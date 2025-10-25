@@ -19,7 +19,7 @@ This guide covers the operational aspects of managing the file server API access
 
 **Single Admin Account:**
 - **Username:** `admin`
-- **Password:** `wEvdwtPC6okaPGUu`
+- **Password:** `yourpassword`
 - **Permissions:** Full access (admin, execute, create, rename, modify, delete, share, download, api)
 
 ### Changing the Password
@@ -56,7 +56,7 @@ docker compose exec filebrowser filebrowser users add username password --perm.d
 ```bash
 # Get JWT token
 curl -X POST -H "Content-Type: application/json" \
-  -d '{"username":"admin","password":"wEvdwtPC6okaPGUu"}' \
+  -d '{"username":"admin","password":"yourpassword"}' \
   http://[your-ip]:8080/api/login
 ```
 

@@ -21,14 +21,14 @@ This guide explains how to access the file server API using JWT authentication. 
 ```bash
 # Get JWT token via API login
 curl -X POST -H "Content-Type: application/json" \
-  -d '{"username":"admin","password":"wEvdwtPC6okaPGUu"}' \
+  -d '{"username":"admin","password":"yourpassword"}' \
   http://[your-ip]:8080/api/login
 ```
 
 **Method 2: Web Interface Login**
 1. Login to web interface at `http://[your-ip]:8080`
 2. Username: `admin`
-3. Password: `wEvdwtPC6okaPGUu`
+3. Password: `yourpassword`
 4. The browser automatically stores the JWT token for API calls
 
 ### Using the Token
@@ -181,7 +181,7 @@ class FileServerClient:
         return response.status_code == 200
 
 # Usage
-client = FileServerClient('http://192.168.50.100:8080', 'admin', 'wEvdwtPC6okaPGUu')
+client = FileServerClient('http://192.168.50.100:8080', 'admin', 'yourpassword')
 
 # List files
 files = client.list_files()
@@ -201,7 +201,7 @@ client.upload_file('/local/file.txt', '/file.txt')
 # Configuration
 SERVER="http://192.168.50.100:8080"
 USERNAME="admin"
-PASSWORD="wEvdwtPC6okaPGUu"
+PASSWORD="yourpassword"
 
 # Get token
 TOKEN=$(curl -s -X POST -H "Content-Type: application/json" \

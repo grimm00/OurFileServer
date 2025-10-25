@@ -17,7 +17,7 @@ This guide explains how to use the file server with the new shared admin account
 
 **Everyone uses the same login:**
 - **Username:** `admin`
-- **Password:** `cEGiUWGN48mC3jGO`
+- **Password:** `yourpassword`
 
 **Who uses these credentials:**
 - You (the administrator)
@@ -35,7 +35,7 @@ This guide explains how to use the file server with the new shared admin account
 2. **Go to:** `http://[your-ip]:8080`
 3. **Enter credentials:**
    - Username: `admin`
-   - Password: `cEGiUWGN48mC3jGO`
+   - Password: `yourpassword`
 4. **Click "Login"**
 
 ### After Login
@@ -163,7 +163,7 @@ curl -H "X-Auth: YOUR_TOKEN" -F "file=@myfile.txt" http://[your-ip]:8080/api/res
 **A:** No! Login once per device, stay logged in for 1 year.
 
 ### Q: What if I forget the password?
-**A:** The password is `cEGiUWGN48mC3jGO`. You can change it if you want.
+**A:** The password is `yourpassword`. You can change it if you want.
 
 ### Q: Can I change the password?
 **A:** Yes, but everyone will need the new password. See the operations guide.
@@ -189,7 +189,7 @@ curl -H "X-Auth: YOUR_TOKEN" -F "file=@myfile.txt" http://[your-ip]:8080/api/res
 
 ### Can't Login
 
-1. **Check password:** Make sure it's exactly `cEGiUWGN48mC3jGO`
+1. **Check password:** Make sure it's exactly `yourpassword`
 2. **Check username:** Make sure it's exactly `admin`
 3. **Try different browser:** Sometimes browser cache causes issues
 4. **Clear browser data:** Clear cookies and localStorage

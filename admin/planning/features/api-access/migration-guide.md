@@ -71,7 +71,7 @@ volumes:
 
 **Shared Credentials:**
 - **Username:** `admin`
-- **Password:** `cEGiUWGN48mC3jGO`
+- **Password:** `yourpassword`
 
 **Devices to Login:**
 - [ ] Your laptop browser
@@ -86,7 +86,7 @@ volumes:
 1. **Open browser** and go to `http://[your-ip]:8080`
 2. **Enter credentials:**
    - Username: `admin`
-   - Password: `cEGiUWGN48mC3jGO`
+   - Password: `yourpassword`
 3. **Click Login**
 4. **Stay logged in:** Session will persist for 1 year
 
@@ -131,7 +131,7 @@ If you need API access for automation:
 
 ### Password Management
 
-**Current Password:** `cEGiUWGN48mC3jGO`
+**Current Password:** `yourpassword`
 **Recommendation:** Change to a memorable password for home use
 
 **To Change Password:**
@@ -253,7 +253,7 @@ If you need to return to no-auth mode:
 ### Common Issues
 
 **Issue:** Can't login with admin credentials
-**Solution:** Verify password is exactly `cEGiUWGN48mC3jGO` (case-sensitive)
+**Solution:** Verify password is exactly `yourpassword` (case-sensitive)
 
 **Issue:** Session expires unexpectedly
 **Solution:** Check browser localStorage, clear and re-login

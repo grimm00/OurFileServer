@@ -72,7 +72,7 @@ API access is now fully functional with JWT authentication. The setup uses a sin
 
 **Credentials:**
 - Username: `admin`
-- Password: `wEvdwtPC6okaPGUu`
+- Password: `yourpassword`
 
 ### For Developers (API Access)
 
@@ -84,7 +84,7 @@ API access is now fully functional with JWT authentication. The setup uses a sin
 ```bash
 # Get token
 TOKEN=$(curl -s -X POST -H "Content-Type: application/json" \
-  -d '{"username":"admin","password":"wEvdwtPC6okaPGUu"}' \
+  -d '{"username":"admin","password":"yourpassword"}' \
   http://[your-ip]:8080/api/login)
 
 # Use token
