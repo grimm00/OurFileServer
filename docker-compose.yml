@@ -6,7 +6,12 @@ services:
       - "8080:80"
     volumes:
       - /mnt/s/fileserver:/srv
+      - ./settings-minimal.json:/config/settings.json
+      - ./data:/database
     restart: unless-stopped
     environment:
       - FB_ROOT=/srv
-      - FB_NOAUTH=true
+      - FB_JWT_SIGNING_KEY=qsgiee3hPYlIWyo-Kmh-6mQqIutmkjQ5xAbTW5vDR6g
+      - FB_ADDRESS=0.0.0.0
+      - FB_PORT=80
+      - FB_DATABASE=/database/filebrowser.db

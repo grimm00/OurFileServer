@@ -5,6 +5,7 @@ This directory contains all operational documentation for managing and maintaini
 ## Quick Links
 
 - [**Server Administration Guide**](./server-administration.md) - Complete guide to managing the file server
+- [**API Management**](./api-management.md) - API access and authentication management
 - [**Troubleshooting Guide**](./troubleshooting.md) - Common issues and solutions
 - [**Network Configuration**](./network-setup.md) - WSL2 networking and port forwarding
 - [**Backup and Recovery**](./backup-recovery.md) - Data protection strategies
@@ -15,7 +16,7 @@ This directory contains all operational documentation for managing and maintaini
 - ✅ **File Server**: Running (Filebrowser on Docker)
 - ✅ **Storage**: External drive mounted at `/mnt/s/fileserver`
 - ✅ **Network Access**: WSL2 with Windows port forwarding
-- ✅ **Authentication**: Disabled (no-auth mode for home use)
+- ✅ **Authentication**: JWT-based with API access enabled
 
 ## Quick Commands
 
