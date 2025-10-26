@@ -11,6 +11,7 @@
 
 ### Core Documents
 - **[API Access Guide](api-access-guide.md)** - Complete guide for using the API
+- **[Upload Guide](upload-guide.md)** - Step-by-step file upload instructions
 - **[User Guide](user-guide.md)** - Web interface usage with shared account
 - **[Migration Guide](migration-guide.md)** - How authentication was implemented
 

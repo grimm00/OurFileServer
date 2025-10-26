@@ -37,6 +37,39 @@ docker compose logs filebrowser
 docker compose restart
 ```
 
+## Quick Reference
+
+### File Upload Methods
+
+**Web Interface (Easiest):**
+1. Login at `http://[your-ip]:8080` (admin/yourpassword)
+2. Navigate to target directory
+3. Drag & drop files or click upload button
+
+**API Upload:**
+```bash
+# Get token
+TOKEN=$(curl -s -X POST -H "Content-Type: application/json" \
+  -d '{"username":"admin","password":"yourpassword"}' \
+  http://[your-ip]:8080/api/login)
+
+# Upload file
+curl -H "X-Auth: $TOKEN" -F "file=@/path/to/file.txt" \
+  http://[your-ip]:8080/api/resources/
+```
+
+**Create Directory:**
+```bash
+curl -H "X-Auth: $TOKEN" -H "Content-Type: application/json" \
+  -d '{"dir": true}' http://[your-ip]:8080/api/resources/new-folder
+```
+
+### Common Operations
+
+- **Upload Guide:** [API Access Upload Guide](../planning/features/api-access/upload-guide.md)
+- **API Management:** [API Operations Guide](api-management.md)
+- **Troubleshooting:** [Troubleshooting Guide](troubleshooting.md)
+
 ## Access URLs
 
 - **Local**: http://localhost:8080
